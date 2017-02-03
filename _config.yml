@@ -1,0 +1,31 @@
+# Syntax highlighting
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: false
+
+# Setup
+title:               "Pattern Lab Jekyll"
+url:                 http://karissademi.github.io/patternlab-jekyll
+baseurl:             /patternlab-jekyll
+destination:         _site
+version:             0.1.0
+port:                8888
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            compressed
+
+collections:
+  00-atoms:
+    output: true
+  00-molecules:
+    output: true
+  00-organisms:
+    output: true

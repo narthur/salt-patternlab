@@ -1,0 +1,29 @@
+---
+layout: template
+title: Article Page
+permalink: /templates/article/
+---
+<div class="page" id="page">
+	{{ site.00-organisms | where:"title" : "Header" }}
+	<div role="main">
+		<div class="l-two-col">
+			<div class="l-main">
+				<article class="article">
+					<header class="article-header">
+						<h1>Article Headline Lorem ipsum dolor sit aweofij</h1>
+						{{ site.00-molecules | where:"title" : "Byline" }}
+					</header>
+					{{ site.00-organisms | where:"title" : "Article Body" }}
+				</article><!--end .article-->
+				{{ site.00-molecules | where:"title" : "Social Share" }}
+				{{ site.00-organisms | where:"title" : "Comment Thread" }}
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{ site.00-organisms | where:"title" : "Related Posts" }}
+				{{ site.00-organisms | where:"title" : "Recent Tweets" }}
+			</div><!--end l-sidebar-->
+		</div><!--end l-two-col-->
+	</div><!--End role=main-->
+	{{ site.00-organisms | where:"title" : "Footer" }}
+</div>

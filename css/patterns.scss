@@ -1,0 +1,113 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+/*
+Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
+You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
+So please don't use these styles. They're just here to put together the demo, and nothing more.
+They're intentionally gray, boring, and crappy because you're supposed to do this stuff yourself.
+
+Atomic design is philosophically complimentary with these CSS approaches:
+
+* SMACSS by Jonathan Snook http://smacss.com/
+* OOCSS by Nicole Sullivan http://oocss.org/
+* BEM CSS Methology : http://bem.info/method/
+* CSS Guidelines by Harry Roberts : https://github.com/csswizardry/CSS-Guidelines
+
+So feel free to use any of these approaches. Or don't. It's totally up to you.
+
+*/
+
+/*------------------------------------*\
+    $TABLE OF CONTENTS
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+
+
+
+@import "patterns/generic/variables";
+@import "patterns/generic/mixins";
+@import "patterns/generic/reset";
+
+
+
+
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "patterns/base/global-classes";
+@import "patterns/base/main";
+@import "patterns/base/links";
+@import "patterns/base/headings";
+@import "patterns/base/text";
+@import "patterns/base/lists";
+@import "patterns/base/media";
+@import "patterns/base/forms";
+@import "patterns/base/tables";
+@import "patterns/base/animation";
+
+
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+@import "patterns/objects/layout";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "patterns/objects/header";
+@import "patterns/objects/nav";
+@import "patterns/objects/main";
+@import "patterns/objects/footer";
+
+
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+@import "patterns/objects/text";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+@import "patterns/objects/icons";
+@import "patterns/objects/buttons";
+@import "patterns/objects/blocks";
+@import "patterns/objects/lists";
+@import "patterns/objects/tooltip";
+@import "patterns/objects/accordion";
+@import "patterns/objects/tabs";
+@import "patterns/objects/sections";
+@import "patterns/objects/article";
+@import "patterns/objects/comments";
+@import "patterns/objects/messaging";

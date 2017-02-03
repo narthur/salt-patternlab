@@ -1,0 +1,22 @@
+---
+layout: template
+title: Blog Page
+permalink: /templates/blog/
+---
+<div class="page" id="page">
+	{{ site.00-organisms | where:"title" : "Header" }}
+	<div role="main">
+		<h1 class="section-title">Our Outdoor Blog</h1>
+		<div class="l-two-col">
+			<div class="l-main">
+				{{ site.00-organisms | where:"title" : "Latest Posts" }}
+				{{ site.00-molecules | where:"title" : "Pagination" }}
+			</div><!--end l-main-->
+
+			<div class="l-sidebar">
+				{{ site.00-organisms | where:"title" : "Recent Tweets" }}
+			</div><!--end l-sidebar-->
+		</div><!--end two-col-->
+	</div><!--End role=main-->
+	{{ site.00-organisms | where:"title" : "Footer" }}
+</div>
